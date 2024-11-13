@@ -14,14 +14,8 @@ class PostController {
 
     async getPostByUser(req, res) {
         try {
-            let id;
-            if(req.params.id !== '-1') {
-                id = parseInt(req.params.id);
-            } else {
-                id = req.user.id
-            }
             const posts = await prisma.post.findMany({
-                where: { authorId: id },
+                where: { authorId: parseInt(req.params.id) },
             });
 
             if (posts.length === 0) {

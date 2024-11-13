@@ -6,7 +6,7 @@ const checkAuth = require('../middleware/checkAuth');
 
 router.get('/', postController.getPosts);
 
-router.get('/getByUser/:id', checkAuth, postController.getPostByUser)
+router.get('/getByUser/:id', postController.getPostByUser)
 
 router.post('/create', checkAuth, postController.createPost);
 

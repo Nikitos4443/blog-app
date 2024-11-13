@@ -4,7 +4,9 @@ const UserController = require('../controllers/userController');
 const userController = new UserController();
 const checkAuth = require('../middleware/checkAuth');
 
-router.get('/getOne/:id', checkAuth, userController.getUser);
+router.get('/getOne/:id', userController.getUser);
+
+router.get('/getMe', checkAuth, userController.getUser);
 
 router.get('/', userController.getUsers);
 

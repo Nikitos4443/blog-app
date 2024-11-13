@@ -8,10 +8,10 @@ class UserController {
         try{
             let id;
 
-            if(req.params.id !== '-1') {
+            if(req.params.id) {
                 id = parseInt(req.params.id);
             } else {
-                id = req.user.id
+                id = req.user.id;
             }
 
             const user = await prisma.user.findUnique({
