@@ -1,0 +1,147 @@
+.profile-submain-container {
+  position: relative;
+  margin-top: 6vh;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4vw;
+}
+
+.container-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+
+  span {
+    font-size: 1.8vw;
+  }
+}
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: auto;
+}
+
+@media(max-width: 1000px) {
+  .settings-container {
+    top: 2vw;
+  }
+}
+
+.settings {
+  width: 50%;
+  height: auto;
+  transition: transform 1s ease-out;
+  margin-bottom: 2%;
+}
+
+.settings-span-container {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  pointer-events: none;
+  font-size: 1.2vw;
+  align-items: center;
+  transition: opacity 0.9s, 0.9s ease;
+  transform: translateY(-20px);
+}
+
+.settings-span-container.visible {
+  opacity: 1;
+  max-height: 200px;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.settings-span-container > span {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--text-color);
+  padding-bottom: 2px;
+}
+
+.settings-span-container > span:hover {
+  cursor: pointer;
+  background-color: var(--background-color);
+}
+
+.settings-span-container > span:active {
+  background-color: white;
+}
+
+.settings:hover {
+  cursor: pointer;
+  transform: rotate(360deg) scale(1.1);
+}
+
+.settings:active {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.profile-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+}
+
+.profile-blurred {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.avatar {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .avatar {
+    width: 20vw;
+    height: 20vw;
+  }
+  .container-desc {
+    span {
+      font-size: 3vw;
+    }
+  }
+}
+
+.create-post-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100vw;
+  margin-bottom: 3vh;
+
+  span {
+    width: 49.48vw;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    transition: width 0.4s ease;
+  }
+
+  span:hover {
+    cursor: pointer;
+    width: 20vw;
+  }
+
+  span:active {
+    cursor: pointer;
+    background-color: var(--background-color);
+  }
+}
+

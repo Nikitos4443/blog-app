@@ -1,0 +1,45 @@
+.navBar-main-container {
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 8vh;
+  z-index: 1;
+}
+
+.logo {
+  height: 6vh;
+  width: 6vh;
+  margin-left: 3vw;
+}
+
+.navigations-container {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+  padding: 0;
+  margin: 0 3vw 0 0;
+  align-items: center;
+
+  li {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  li:active {
+    transform: scale(1.05);
+  }
+}

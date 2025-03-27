@@ -1,0 +1,39 @@
+.main-container {
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+form input {
+  width: 40vw;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+form input:focus {
+  outline: none;
+  border-color: inherit;
+}
+form button {
+  margin-top: 20px;
+  border-radius: 3px;
+  width: 10%;
+  height: 30px;
+}
+form button:hover {
+  opacity: 0.8;
+}
+form button:active {
+  transform: scaleX(0.95) scaleY(0.95);
+}
+form .pass-rules {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/*# sourceMappingURL=registration.css.map */
