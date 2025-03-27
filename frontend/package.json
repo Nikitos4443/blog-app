@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "../node_modules/.bin/vite",
-    "build": "../node_modules/.bin/vite build",
-    "lint": "../node_modules/.bin/eslint .",
-    "preview": "../node_modules/.bin/vite preview"
+    "dev": "npx vite",
+    "build": "node_modules/.bin/vite build",
+    "lint": "node_modules/.bin/eslint .",
+    "preview": "node_modules/.bin/vite preview"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
