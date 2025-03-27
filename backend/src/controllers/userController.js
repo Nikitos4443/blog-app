@@ -9,7 +9,17 @@ class UserController {
             let id;
 
             if(req.params.id) {
-                id = parseInt(req.params.id);
+                try {
+                    id = parseInt(req.params.id);
+
+                    if (isNaN(id)) {
+                        throw new Error('Bad ID');
+                    }
+
+                } catch (error) {
+                    res.status(404).json({message: 'Not found'});
+                    return;
+                }
             } else {
                 id = req.user.id;
             }
@@ -19,7 +29,7 @@ class UserController {
             });
 
             if(!user){
-                res.json({message: 'User not found'});
+                res.status(404).json(({message: 'User not found'}));
                 return;
             }
             res.json(user);
@@ -103,6 +113,7 @@ class UserController {
     
     async deleteUser(req, res) {
         try{
+            console.log(req.params);
             await prisma.user.delete({
                 where: {id: parseInt(req.params.id)}
             });
