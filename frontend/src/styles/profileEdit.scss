@@ -1,0 +1,94 @@
+.edit-overlay {
+  color: #242424;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.edit-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 50%;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-edit-form {
+  input {
+    width: 100%;
+  }
+}
+
+.height {
+  height: 50vh;
+}
+
+.avatar-set {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30%;
+  align-items: center;
+  input {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .avatar-set {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .submit-button {
+    width: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .submit-button {
+    width: 50%;
+  }
+}
+
+.set-no-avatar {
+  border: 1px dashed #242424;
+  border-radius: 40px;
+  padding: 2px;
+}
+
+.set-no-avatar:hover {
+  cursor: pointer;
+  border-spacing: 1px;
+  border: 1px solid #242424;
+  text-align: center;
+}
+
+.submit-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+

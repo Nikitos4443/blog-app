@@ -1,0 +1,43 @@
+$error-primary: #333333;
+$error-background: #f9f9f9;
+$error-text: #333;
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: $error-background;
+  color: $error-text;
+
+  &__title {
+    font-size: 10rem;
+    font-weight: bold;
+    color: $error-primary;
+    margin: 0;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: darken($error-text, 20%);
+  }
+
+  &__link {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: $error-primary;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken($error-primary, 10%);
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.likes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  span:first-child {
+    background-color: white;
+    color: var(--text-color);
+  }
+}
+
+.heart-icon {
+  font-size: 24px;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+}
+
+.like-number {
+  font-size: 14px;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.small-heart {
+  position: absolute;
+  font-size: 14px;
+  animation: fly 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(3px, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -50px);
+    opacity: 0;
+  }
+}

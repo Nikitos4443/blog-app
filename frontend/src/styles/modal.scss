@@ -1,0 +1,35 @@
+.modal-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-height: 80vh;
+}
+
+.overlay {
+  color: #242424;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.crop-container {
+  width: 100%;
+  height: 90%;
+  flex-direction: column;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,78 @@
+.auth-main-container {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 5vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 40vw;
+  min-height: 400px;
+  margin: 40px auto;
+  color: black
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    width: 40vw;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: inherit;
+  }
+
+  button {
+    margin-top: 20px;
+    border-radius: 3px;
+    width: 10%;
+    height: 30px
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  button:active {
+    transform: scaleX(0.95) scaleY(0.95);
+  }
+
+  .pass-rules {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+.no-acc{
+  margin-top: 20px;
+  color: #2121a3;
+  text-decoration: underline;
+  transition: color 0.5s ease;
+}
+
+.no-acc:hover {
+  color: #0000ff;
+  cursor: pointer;
+}

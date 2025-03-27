@@ -1,0 +1,23 @@
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: inline-block;
+  background-color: #333333;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #2c2c2c;
+}
+
+.file-name {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #555;
+}
