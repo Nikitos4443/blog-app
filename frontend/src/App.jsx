@@ -1,4 +1,4 @@
-import {Profile, Registration, Home, Auth, Error404Page} from './Pages'
+import {Profile, Registration, Home, Auth, Error404Page} from './Pages/index.js'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {useEffect} from "react";
 import {useDispatch} from "react-redux";
